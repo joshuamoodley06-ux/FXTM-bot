@@ -8,7 +8,7 @@ OPENAI_MODEL     = os.getenv("OPENAI_MODEL", "gpt-3.5-turbo")
 TELEGRAM_TOKEN   = os.getenv("TELEGRAM_TOKEN", "")
 TV_SECRET        = os.getenv("TV_SECRET", "")  # optional, for TradingView alerts
 
-client = OpenAI(api_key=OPENAI_API_KEY)
+client = OpenAI()
 app = Flask(__name__)
 
 # ---------------- Telegram helpers ----------------
